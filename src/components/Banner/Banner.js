@@ -4,8 +4,8 @@ import cat from "../../assets/img/cat.png";
 import 'animate.css';
 import "./Banner.css";
 import TrackVisibility from 'react-on-screen';
-
-export const Banner = () => {
+import classNames from 'classnames'
+export const Banner = ({ isDarkMode }) => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -48,7 +48,7 @@ export const Banner = () => {
     }
 
     return (
-        <section className="banner" id="home">
+        <section className={classNames("banner", { 'bannerDark': isDarkMode })} id="home">
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
@@ -69,11 +69,11 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                                     <img src={cat} alt="Header Img" />
-                                 </div>}
+                                </div>}
                         </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
         </section>
-    ) 
+    )
 }

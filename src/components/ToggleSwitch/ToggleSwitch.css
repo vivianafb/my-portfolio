@@ -1,0 +1,38 @@
+.switchButton {
+    width: 60px;
+    height: 32px;
+    border-radius: 18px;
+    position: relative;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-left: 10px;
+}
+
+.switchBox {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #ffb6c8;
+    transition: .3s;
+    transition-timing-function: ease;
+}
+
+.switchButtonDark {
+    background-color: #000000;
+}
+
+.switchBoxDark {
+    left: 30px;
+}
+
+.switchImage {
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    width: 18px;
+
+}

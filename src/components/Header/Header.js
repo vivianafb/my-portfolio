@@ -3,10 +3,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
 import navIcon3 from '../../assets/img/nav-icon3.svg';
-import './Navbar.css'
+import './Header.css'
+import { ToggleSwitch } from "../ToggleSwitch/ToggleSwitch";
 
-export const NavBar = () => {
-
+export const Header = ({ isDarkMode, handleDarkMode }) => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -50,9 +50,13 @@ export const NavBar = () => {
                             <a href="https://www.instagram.com/vivi.codes_/" target="_blank"><img src={navIcon3} alt="" /></a>
                         </div>
                         <button className="vvd"><span>Download Resume</span></button>
+
                     </span>
+                    <ToggleSwitch handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
                 </Navbar.Collapse>
+
             </Container>
+
         </Navbar>
     )
 }
