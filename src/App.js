@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Header } from './components/Header/Header';
 import { Banner } from './components/Banner/Banner'
+import { About } from "./components/About/About";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
 
   const handleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
@@ -23,6 +24,8 @@ function App() {
     <div className="App">
       <Header handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
       <Banner isDarkMode={isDarkMode} />
+      <About isDarkMode={isDarkMode} />
+
     </div>
   );
 }
