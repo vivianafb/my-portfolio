@@ -1,0 +1,30 @@
+.about {
+    background-color: #e986a0;
+    padding: 200px 0 200px 0;
+}
+
+.aboutDark {
+    background-color: #313131;
+}
+
+.aboutme_section {
+    color: #e986a0;
+    margin-bottom: 30px;
+}
+
+.aboutme_title {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.aboutme_text {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutme_button {
+    color: #fff;
+    padding: 15px;
+    background-color: #e986a0;
+    border-radius: 8px;
+}

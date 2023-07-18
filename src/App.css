@@ -26,14 +26,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  /* scroll-padding-top: 75px; */
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #ffb6c8 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
   cursor: url(assets/img/cursor.png), auto;

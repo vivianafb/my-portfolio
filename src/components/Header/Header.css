@@ -15,6 +15,7 @@ nav.navbar {
 nav.navbar.scrolled {
     padding: 0px 0;
     background-color: #e986a0;
+    height: 70px;
 }
 
 nav.navbar a.navbar-brand {
@@ -25,12 +26,17 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
     color: #fff !important;
     letter-spacing: 0.8px;
-    padding: 0 25px;
-    font-size: 20px;
+    padding: 0 30px;
+    font-size: 18px;
     opacity: 0.75;
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+    font-size: 22px;
+    transition: .3s;
+    opacity: 1;
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
